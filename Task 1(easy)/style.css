@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: goldenrod;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: goldenrod;
+}
+
+.home {
+    height: 100vh;
+    background: url('burger\ home.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+}
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: goldenrod;
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3s;
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    animation: showRight 1s ease forwards;
+    animation-delay: 4s;
+}
+
+.home-content .btn-box {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 100%;
+    background: goldenrod;
+    border: 2px solid goldenrod;
+    border-radius: 8px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: goldenrod;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+    
+}
+
+.about strong {
+    color: gold;
+}
+
+.about {
+    height: 100vh;
+    opacity: 1; 
+    padding: 50px 0;
+    background-image: url(3.png); 
+    background-size: cover;
+    text-align: center;
+    transition: opacity 1s ease-in-out; 
+}
+
+.about h2 {
+    margin-top: 50px;
+    font-size: 75px;
+    color: goldenrod; 
+}
+
+.about ul {
+    font-size: 32px;
+    text-align: left;
+    padding-left: 15%;
+}
+
+.about strong {
+    color: gold;
+}
+
+
+.about ul li {
+    margin-top: 30px;
+    margin-bottom: 20px; 
+}
+
+.about p {
+    font-size: 32px;
+}
+
+
+.menu {
+    height: 100vh;
+    opacity: 1; 
+    padding: 50px 0;
+    background-image: url(menu.jpg); 
+    background-size: cover;
+    text-align: center;
+    transition: opacity 1s ease-in-out; 
+}
+
+.menu h2 {
+    margin-top: 50px;
+    font-size: 75px;
+    color: goldenrod; 
+}
+
+.menu ul {
+    font-size: 32px;
+    text-align: left;
+    padding-left: 15%;
+}
+
+.menu strong {
+    color: gold;
+}
+
+
+.menu ul li {
+    margin-top: 30px;
+    margin-bottom: 20px; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.location {
+    height: 100vh;
+    opacity: 1; 
+    padding: 50px 0;
+    background-image: url(1.png);
+    background-size: cover;
+    text-align: center;
+    transition: opacity 1s ease-in-out; 
+}
+
+.location h2 {
+    margin-top: 50px;
+    font-size: 75px;
+    color: goldenrod; 
+}
+
+.location ul {
+    font-size: 32px;
+    text-align: left;
+    padding: 15%;
+}
+
+.location strong{
+    color: gold;
+}
+
+.location ul li {
+    margin-top: 30px;
+    margin-bottom: 20px; 
+}
+
+
+
+/* contact */
+.contact {
+    background-color: black;
+
+}
+
+.contact h2 {
+    color: goldenrod;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
